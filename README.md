@@ -1,4 +1,4 @@
-r Sample Backbone Application
+# Sample Backbone Application
 
 Basic applicaiton demonstrating backbone, chai/mocha, sass and Grunt.
 
