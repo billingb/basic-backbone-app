@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>unit</title>
+    <link rel="stylesheet" href="../../../node_modules/mocha/mocha.css" />
+  </head>
+  <body>
+
+    <div id="mocha"></div>
+
+
+    <script src="../../../node_modules/mocha/mocha.js"></script>
+
+    <script src="../../../spec/unit/helpers/requireConfig.js"></script>
+    <script src="../../../node_modules/requirejs/require.js"></script>
+
+    <script>mocha.setup('bdd')</script>
+
+    <script>
+      require([
+       "../../spec/unit/views/MainView_spec", 
+      ],
+      function () {
+      
+        if (window.mochaPhantomJS) {
+          mochaPhantomJS.run();
+        } else {
+          mocha.run();
+        }
+      });
+    </script>
+
+  </body>
+</html>

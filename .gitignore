@@ -1,0 +1,6 @@
+.idea/
+*.iml
+node_modules/
+src/lib/*
+src/css/*
+!src/lib/text.js
